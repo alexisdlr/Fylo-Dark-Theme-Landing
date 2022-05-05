@@ -1,0 +1,12 @@
+.background-curvy {
+    width: 100%;
+    position: absolute;
+    bottom: -38px;
+    left: 0;
+    background-color: $dark-blue ;
+    z-index: -1;
+    .img-curvy {
+        width: 100%;
+    }
+
+}

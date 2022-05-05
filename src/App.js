@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  NavBar, 
+  MainSection, 
+  Grid, 
+  StayProductive,
+  CardP,
+  Footer
+} from './components';
+import './sass/style.scss';
+import background from '../src/images/bg-curvy-desktop.svg'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='background-curvy'>
+            <img
+            className='img-curvy'
+            src={background}
+            />
+        </div>
+     <NavBar/>
+     <MainSection/>
+     <Grid/>
+     <StayProductive/>
+     <CardP/>
+     <Footer/>
     </div>
+  
   );
 }
 

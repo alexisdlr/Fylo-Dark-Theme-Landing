@@ -1,0 +1,34 @@
+@import 'variables';
+@import 'header';
+@import 'MainSection';
+@import 'Background';
+@import 'Grid';
+@import 'StayProductive';
+@import 'Persons';
+@import 'footer';
+@import 'MediaQueries';
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: $OpenSans;
+    background-color: $dark-blue;
+    color: $white;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 12px;
+        background-color: $mainbg;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $cyan;
+        border-radius: 12px;
+    }
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
